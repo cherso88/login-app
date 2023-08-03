@@ -7,8 +7,6 @@ WORKDIR /app
 # Copy the project files to the container
 COPY . .
 
-RUN git checkout master
-
 # Build the project with Maven
 RUN mvn clean package
 
